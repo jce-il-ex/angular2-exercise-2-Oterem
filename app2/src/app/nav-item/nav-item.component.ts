@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-nav-item',
@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-item.component.css']
 })
 export class NavItemComponent implements OnInit {
-
+@Input() item;
   constructor() { }
-
+  
   ngOnInit() {
   }
 
